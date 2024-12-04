@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 import "./ImageDisplay.css";
 
 const ImageDisplay = ({ name, count, images }) => {
-  // Check if any image has an error
-  const hasError = images.some((img) => img.error);
+
+    const hasError = images.some((img) => img.error);
 
   return (
     <div className="image-display-container">
       <h3 className="component-title">{name} ({count})</h3>
 
-      {hasError && <div className="large-error-icon" title="An error occurred with one or more images.">!</div>}
+      {hasError && <div className="large-error-icon" title="An error occurred.">!</div>}
 
       <div className="image-grid">
         {images.map((img, index) => (
