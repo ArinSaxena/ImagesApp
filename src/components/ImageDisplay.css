@@ -1,0 +1,56 @@
+.image-display-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .component-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 38px);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-wrapper {
+    width: 38px;
+    height: 38px;
+    position: relative;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .placeholder,
+  .error-icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    color: #aaa;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .large-error-icon {
+    color: red;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
